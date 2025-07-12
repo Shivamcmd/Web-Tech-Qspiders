@@ -1,0 +1,52 @@
+  /*! background properties */
+ /*& background : url("https://cdn.pixabay.com/photo/2022/01/01/16/29/antelope-6908215_1280.jpg") no-repeat center; 
+ /** background-color: 
+ values : colors 
+ /** background-image: 
+ values :url ("path")
+ /** background-repeat :
+ values : (repeat , no repeat , repeat-x , repeat-y
+ /** background-size : 
+ values : cover , contain , auto , px
+ /** background-attachment: 
+ values: scroll , fixed 
+ /** background-position : 
+  1) background-position-x (left , center, right)
+ 2) background-position-y (top , center, bottom)
+ 
+ */
+
+ section{
+    color: aqua;
+    height: 1000px;
+    width: 1500px;
+/* 
+    border: solid;
+    background-color: pink;
+    background-image: url("C:\Users\Shivam\Desktop\Web dev  - Qspiders\CSS\style.css"); */
+
+
+   background-repeat: repeat;
+   background-repeat: repeat-x;
+   background-repeat: repeat-y;
+
+
+   background-position: right center;
+   background-position: right;
+   
+   background-position-x: right;
+   background-position-y: bottom;
+
+   background-size: contain;
+   background-size: 200px 400px;
+} 
+
+
+body{
+    background: url("https://cdn.pixabay.com/photo/2022/01/01/16/29/antelope-6908215_1280.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-attachment: fixed;
+    /* color: white; */
+
+}

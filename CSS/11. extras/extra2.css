@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** making drop down in navbar */
+
+#mainNavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    color: rgb(255, 33, 33);
+}
+
+#mainNavbar .options{
+    border: solid blue ;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+
+    position: relative;
+
+}
+
+#mainNavbar .options:hover{
+    background-color: white;
+    color: black;
+}
+
+#mainNavbar .options .drop_down{
+    display: none;
+}
+
+#mainNavbar .options:hover .drop_down{
+    display: block;
+
+    position: absolute;
+    top: 38px;
+    left: 0px;
+
+    color: red;
+    border: solid;
+    width: 100%;
+}
+
+
+#mainNavbar .options:hover .drop_down div{
+    padding: 10px;
+    text-align: center;
+    background-color: aqua;
+}
+
+#mainNavbar .options:hover .drop_down div:hover{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(24, 216, 72);
+}

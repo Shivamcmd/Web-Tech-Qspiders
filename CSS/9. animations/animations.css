@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#box{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(255, 2, 238);
+
+
+  /*& Example 1 : */
+  animation-name: ColorChange;
+  animation-duration: 10s;
+  animation-delay: 2s ;
+  animation-timing-function: 1;
+
+  /*& Example 2 */
+  animation-name: positionChange;
+  animation-duration: 5s;
+  animation-delay:2s;
+  animation-iteration-count: infinite;
+  animation-direction:normal;
+
+}
+  /** animation styling through keyframes only  /*
+  syntax: @keyframes animationname (colorchange, position change) 
+  /* transform: translate(0px , 0px ); */
+  /* background:url(""); */
+  /* background-size: cover; */
+
+/** style set 1 */
+
+@keyframes ColorChange {
+  from{
+    background-color: crimson;
+  }
+
+  25%{
+    background-color: yellow ;
+  }
+
+  50%{
+    background-color: rgb(43, 243, 43);
+
+  }
+  75%{
+    background-color: aqua;
+
+  }
+  to{
+    background-color: blue;
+
+  }  
+}
+
+/** Style set 2 */
+
+@keyframes positionChange {
+  0% {
+    transform: translate(0px , 0px);
+    background-color: crimson;
+    background: url("https://images.pexels.com/photos/30916529/pexels-photo-30916529.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load") no-repeat center;
+    background-size: cover;
+    border-radius: 0%;
+  }
+
+  25% {
+    transform: translate(1280px , 0px);
+    background-color: blue;
+    background: url("https://images.pexels.com/photos/30573731/pexels-photo-30573731.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load") no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  50%{
+    transform: translate(1280px ,520px);
+    background-color: rgb(10, 236, 7);
+    background: url("https://images.pexels.com/photos/30916534/pexels-photo-30916534.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load") no-repeat center;
+    background-size: cover;
+    border-radius: 0%;
+  }
+
+  75%{
+    transform: translate(0px , 520px);
+    background-color: rgb(12, 12, 11);
+    background: url("https://images.pexels.com/photos/31034348/pexels-photo-31034348.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load") no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+
+  }
+
+  100%{
+    transform: translate(0px ,0px);
+    background-color: crimson;
+    background: url("https://images.pexels.com/photos/29252360/pexels-photo-29252360.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load") no-repeat center;
+    background-size: cover;
+    border-radius: 0%;
+  }
+  
+}
+

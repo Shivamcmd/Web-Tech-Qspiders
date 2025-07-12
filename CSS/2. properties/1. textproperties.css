@@ -1,0 +1,76 @@
+/*!  text properties  */
+/** color ( color of text )
+/** text-align (text will be in center,left,right,justify)
+/** text-decoration-line (type of line -underline,overline,line through)
+/** text-decoration-style (solid, dotted,
+/** text-decoration-color
+/** we can also write all 3 things in 1
+/*& text-decoration : underline dotted red /*
+/** text-transform: uppercase , lowercase , Capitalize 
+/** text-wrap : wrap , nowrap
+/** text-indent: 1px , 2px
+/** text-shadow: 0px 0px 0px black
+/** word-spacing: 50px
+/** letter-spacing: 50px
+/** line-height : 50px
+ **/
+
+
+p{
+     /** This will specify the color of text
+    /*&      values :black(default) , any color **/
+    color: blue;
+    background-color:pink;
+   
+
+/** It will specify the alignment position of text .
+    /*&      values : start( default) , center ,end, justify , left , right */
+    text-align:center;
+    
+
+    /*! syntax: text-decoration : text-decoration-line text-decoration-style text-decoration-color; */
+/*! text-decoration: underline double gray; */
+
+  /** It will specify the type of line
+    /*&     values: none(default) , underline , overline, line-through */
+    text-decoration-line:underline;
+    
+/** It will specify style of  text-decoration-line
+    /*&     values: solid(default) , dotted , dashed , double , wavy , none */
+    text-decoration-style: dotted;
+    
+
+ /** It will specify the color of  text-decoration-line
+    /*&     values: same as text color (default) , any color */
+    text-decoration-color: red;
+   
+
+/** ----------------------------------------------------------------*/
+    word-spacing: 50px;
+    letter-spacing: 6px;
+
+    line-height: 60px;
+
+    text-wrap: wrap;
+    /*wrap , nowrap */
+
+    text-transform:uppercase;
+    /* lowercase , uppercase , capitalize */
+
+    text-indent: 1px;
+
+    text-shadow: 0px 0px 0px black;
+}
+
+h1{
+
+    text-align:center;
+    text-decoration: underline dashed rgb(79, 8, 192);
+    color: rgb(0, 255, 51);
+    text-shadow: 1px 1px 3px blue;
+}
+
+h2{
+    color: rgb(233, 34, 8);
+    text-align: center;
+}

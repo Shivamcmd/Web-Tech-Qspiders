@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/*! topics here are :
+/** min-width , max-width , min-height , max-height ,
+/** width- 
+    (fit-content , max-content , min-content),
+
+/** overflow - it means content will not overflow.
+ values - auto , hidden , scroll , visible  
+
+ /** opacity - color intensity of content (color halka dikhega)
+ values : 0 to 1 
+
+/* #mainNavbar{
+    border: solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+} */
+
+#mainNavbar div{
+    border: solid blue;
+    flex: 1;
+    min-width: 80px;
+    max-width: 120px;
+
+    width:fit-content;
+    padding: 10px;
+}
+
+.container{
+    border: 5px solid red;
+    margin: 50px;
+
+    height: 200px;
+    overflow: auto;
+    overflow: hidden;
+    overflow:scroll;
+    overflow: visible;
+
+}
+
+.container1{
+    opacity: 1;
+}
+
+
+.container2{
+    opacity: 0.9;
+}
+
+
+.container3{
+    opacity: 0.4;
+}

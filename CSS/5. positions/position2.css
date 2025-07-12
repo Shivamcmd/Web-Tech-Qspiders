@@ -1,0 +1,121 @@
+/** example -2 ( positions) */
+
+.category-clothing{
+    border: solid black;
+    position: relative;
+}
+
+.category-clothing .productsContainer{
+    border: solid blue;
+    margin: 20px;
+    position: relative;
+
+}
+
+.category-clothing .productsContainer .product{
+border: solid green;    
+display: inline-block;
+
+height: 300px;
+width: 200px;
+margin: 20px;
+padding: 20px;
+position: relative;
+
+}
+
+.category-clothing .productsContainer .product button{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    padding: 10px;
+
+}
+
+.category-clothing .productsContainer .product button:hover{
+    background-color: crimson;
+    color: white;
+    border: solid black;
+}
+
+
+
+/** z-index (works with positions only) */
+/* z-index specifies the order in which they stack or appear:
+higher z-index appear in front .
+lower z-index appear in back
+
+/**  example -1  */
+.box{
+    height: 200px;
+    width: 200px;
+    border: solid;
+    background-color: chocolate;
+}
+
+.box1{
+    position:absolute;
+    background-color: red;
+    top: 50px;
+    left: 50px;
+}
+
+.box2{
+    position: absolute;
+    background-color: aqua;
+    top:100px;
+    left:100px;
+    z-index:-2;
+}
+
+.box3{
+    position: absolute;
+    background-color:blue;
+    top:150px;
+    left:150px;
+    z-index:2;
+}
+
+.box4{
+    position: absolute;
+    background-color:darkmagenta;
+    top:200px;
+    left:200px;
+    z-index:1;
+}
+
+/** example -2 */
+
+img{
+    position:relative;
+}
+
+img[alt="burger"]
+{
+    z-index: 3;
+    top: 70px;
+    left: 700px;
+
+}
+
+img[alt="colddrink"]
+{
+   z-index: 2;
+    top: 60px;
+    left: 310px;  
+}
+
+img[alt="fries"]
+{
+   z-index: 1;
+    top: 20px;
+    left: 80px; 
+    /* height: 350px; */
+}
+
+
+
+
+
+

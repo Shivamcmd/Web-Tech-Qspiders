@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!--
+1. form tag - semantic element 
+    ?a) action b) Method c) Novalidate d)target e) autocomplete.
+2. label tag- specify pupose to the input  user which data you should enter
+    ?a) for attribute - it is used to connect with id of input (label for = "username")
+3. input Tag- field bnata h , data k liye
+    ?a) type attribute - defines type of data to enter 
+
+           (text, email,password , number, tel, radio, checkbox 
+           button , reset , submit
+           time , date , week , month
+           color , file , search , image , range , url
+
+    ?b) name attribute - variable assigned to store value (username , usermobile , useremail)
+    ?c) id attribute - to specify id , so that it directly hovers to respective field (id="username")
+    ?d) value attribute - value attribute specifies the value of an <input> element.
+               
+
+4. button tag- to create button
+         ?a)type attribute - reset - reset all the fileds
+                           ?submit - it submits data and refreshes to where it was
+
+ 5.   select tag - to generate drop down menu 
+ 6.   optgroup tag - used to group options
+ 7.   option tag- list the items
+ 8.   datalist tag- create dropdown list but here we can sort using initial letters
+ 9.   fieldset tag - It is used to set the field for whole form
+ 10   legend tag- provide caption to the form
+ 11.  textarea - name, id , rows , cols .
+    -->
+
+    <form>
+        <label for="userName">Name:</label>
+        <input type="text" name="userName"  value="name please" id="userName"> 
+        <br> <br>
+
+        <label>Email</label>
+        <input type="email" name="userEmail">
+        <br> <br>
+
+        <label>Phone No:</label>
+        <input type="tel" name="userMobile">
+        <br> <br>
+
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" id="gender_male" >
+
+        <label for="gender_male">Male</label>
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="others">Others
+        <br> <br>
+
+
+        <label for="">Skills</label>
+        <input type="checkbox" name="skills" value="html" multiple> HTML
+        <input type="checkbox" name="skills" value="css"> CSS
+        <input type="checkbox" name="skills" value="javascript"> Javascript
+        <input type="checkbox" name="skills" value="reactjs"> React JS
+
+        <br> <br>
+
+        <label for="">Course :</label>
+        <select name="course" id="" >
+            <option value="mern">MERN STACK</option>
+            <option value="pfs">PYTHON FULLSTACK</option>
+            <option value="jfs">JAVA FULLSTACK</option>
+            <option value="da">DATA ANALYTICS</option>
+            <option value="ds">DATA SCIENCE</option>
+            <option value="njs">NEXT JS</option>
+            <option value="at">AUTOMATION TESTING</option>
+        </select>
+        <br> <br>
+        
+        <label for="">Skills:</label>
+        <select name="user_skills" id="" multiple> <!--multiple attribute-->
+
+            <optgroup label="Frontend" >
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>Javascript</option>
+                <option>React JS</option>
+            </optgroup>
+
+            <optgroup label="Database">
+                <option>SQL</option>
+                <option>MongoDB</option>
+                <option>Redis</option>
+            </optgroup>
+
+            <optgroup label="Backend">
+                <option>Node JS</option>
+                <option>Java</option>
+                <option>Python</option>
+                <option>Express JS</option>
+            </optgroup>
+        </select>
+ <br> <br>
+
+ <hr>
+
+ <form>
+<fieldset>
+<legend> Personal details</legend>
+<label for="user_name">Name:</label>
+<input type="text" name="username" id="username" value="Apna name likh ">
+<br> <br>
+
+<label for="user_name">Email:</label>
+<input type="email" name="username" id="username" value="Email likh bhai">
+<br> <br>
+
+<label for="user_name">Age</label>
+<input type="number" name="username" id="username" value="">
+<br> <br>
+
+<label for="phone_no">Phone No</label>
+<input type="number" name="phone_no" id="phone_no" value="">
+<br> <br>
+
+</fieldset>
+
+<fieldset>
+<legend>Education</legend>
+<label for="">Job location:</label>
+<input list="job_locations" name="job_locations" id="">
+<datalist id="job_locations">
+    <option>Delhi</option>
+    <option>Jaipur</option>
+    <option>Jaisalmer</option>
+    <option>Noida</option>
+    <option>Banglore</option>
+    <option>Udaipur</option>
+    <option>Munnar</option>
+    <option>Darjeeling</option>
+    <option>PKMKB</option>
+    
+</datalist>
+
+<br> <br>
+
+<label for="">Skills</label>
+
+<input list="skill_set" name="skill_set" id="my_skills">
+<datalist id="skill_set"> 
+<option>HTML</option>
+<option>CSS</option>
+<option>JAVASCRIPT</option>
+<option>TAILWIND CSSi</option>
+<option>CASSANDRA</option>
+<option>REACTJS</option>
+<option>NODEJS</option>
+<option>NEXTJS</option>
+<option>MONGODB</option>
+<option>EXPRESSJS</option>
+<option>NESTJS</option>
+<option>REACT NATIVE</option>
+
+</datalist>
+ 
+<br> <br> 
+
+<label for="">Note:</label>
+<textarea name="" id="" rows="5" cols="30"></textarea>
+
+
+
+<br> <br>
+
+        <button type="reset">Reset</button>
+        <button type="Submit">Submit</button>
+</fieldset>
+
+<hr>
+
+
+<fieldset>
+text: <input type="text"> <br> <br>
+email :<input type="email"> <br> <br>
+password :<input type="password"> <br> <br>
+number : <input type="number"> <br> <br>
+tel: <input type="tel"> <br> <br>
+radio :<input type="radio"> <br> <br>
+checkbox :<input type="checkbox"> <br> <br>
+checkbox :<input type="checkbox">  <br> <br>
+button :<input type="button" value="button">  <br> <br>
+reset :<input type="reset" value="reset"> <br> <br>
+submit :<input type="submit" value="submit"> <br> <br>
+time :<input type="time"> <br> <br>
+date :<input type="date"> <br> <br>
+datetime - local :<input type="datetime-local"> <br> <br>
+week :<input type="week"> <br> <br>
+month :<input type="month"> <br> <br>
+color :<input type="color" name="fav-color"> <br> <br>
+search :<input type="search"> <br> <br>
+image :<input type="image" src="./images/shivlandscape2.jpg" height="200px"> <br> <br>
+range :<input type="range" name="trainer-rating" min="0" max="5"> <br> <br>
+url :<input type="url"> <br> <br>
+file :<input type="file"> 
+
+
+
+
+</fieldset>
+<!--type , name , value , id , height , width , min , max, minlength , maxlength , list 
+src , placeholder , required , readonly , disabled , autofocus , autocomplete 
+pattern , step , size-->
+
+min max: <input type="range" min="0" max="5"> <br> <br>
+min max: <input type="number" min="18" max="35"> <br> <br>
+minlength maxlength: <input type="text" minlength="8" maxlength="16"> <br> <br>
+step: <input type="number" step="7"> <br> <br>
+size: <input type="text" size="5"> <br> <br>
+size: <input type="text" size="50"> <br> <br>
+placeholder: <input type="text" placeholder="enter you name"> <br> <br>
+placeholder: <input type="email" placeholder="enter your email"> <br> <br>
+required <input type="email" required> <br> <br>
+readonly <input type="text" name="company-name" value="TCS" readonly><br> <br>
+disabled <input type="text"name="company-name" value="TCS" disabled> <br> <br>
+autofocus <input type="text" placeholder="This should be your first entry field" size="30" autofocus> <br> <br>
+autocomplete <input type="text" name="userEmail" autocomplete="on"> <br> <br>
+</form>
+
+</body>
+
+</html>

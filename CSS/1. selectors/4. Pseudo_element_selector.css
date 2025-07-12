@@ -1,0 +1,40 @@
+/*! Pseudo element selectors */
+special selectors 
+/** ::before - Adds content before the element
+/** ::after	- Adds content after the element	
+/** ::first-line - The first line of a block of text
+/** ::first-letter	The first letter of a block 
+/** content :which you want to display (text, icon, symbol)     */
+
+p::before{
+    content:"Shri";
+    color:red; }
+
+li::before{
+  content:"• "; /* You can use any symbol like "→", "★", "✔", etc. */
+  color: red;
+  font-size: 20px;
+  margin-right:0px;
+}
+
+
+p::after{
+    content:" you got selected ";
+    color: rgba(16, 215, 29, 0.851);
+}
+
+div::first-line{
+    color:rgb(239, 5, 212);
+}
+
+div::first-letter{
+color: rgb(103, 18, 208);
+font-size: 35px;
+}
+
+
+
+
+
+
+

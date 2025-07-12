@@ -1,0 +1,182 @@
+
+/*! Pseudo-class selectors 
+apply styles to elements only when something 
+special happens to them — like when you hover
+ over a link, click a button, or focus on a text box.
+
+/**  :hover      --(applyes effects after hover )
+/**  :first child  --(Selects the first child of a parent)
+/**  :last child  --(Selects the last child of a parent)
+/**  :nth child   --(number/even /odd/2n /2n+1/ any expresion)
+/**  :first-of-type --(First of its type among siblings)
+/**  :last-of-type  --(Last of its type among siblings )
+/**  :nth-last-of-type --(number/ even / odd / 2n / 2n+1 / any expression)
+/**  :checked      --(Matches checkboxes/radios that are checked)
+/**  :required   -- (targets form fields that have the required attribute)
+/**  :focus      -- (When the element (like input) is focused)
+/**  :read-only  -- (targets form fields or elements that are not editable.)
+/**  :active     -- (When the element is being clicked)
+/**  :link       -- (For unvisited links)
+/**  :visited    -- (For visited links)
+/**  :any-link   -- (matches all anchor (<a>) elements with an href attribute)
+
+/**
+
+/*!:hover  */
+
+h1:hover{
+    background-color: red;
+    color: white;
+}
+
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+}
+#box:hover{
+    background-color: rgb(255, 106, 0);
+   height: 200px;
+   width: 200px;
+   
+}
+
+tr:hover{
+    background-color: blue;
+}
+
+td:hover{
+    background-color: chocolate;
+}
+
+
+
+/*! first-child */
+section p:first-child{
+    color: white;
+    background-color: red;
+}
+
+
+/*! last-child */
+section p:last-child{
+    color: white;
+    background-color:rgb(128, 62, 0);
+}
+
+/*! nth-child */
+section p:nth-child(7){
+    color:white;
+    background-color: brown;
+
+}
+
+section p:nth-child(2),
+ section p:nth-child(5){
+    color:green;
+    background-color: brown;
+}
+
+section p:nth-child(even){
+    color:white;
+    background-color: blue;
+
+}
+
+section p:nth-child(odd){
+    color: black;
+    background-color: brown;}
+
+section p:nth-child(n) {
+    color: white;
+    background-color: brown;
+}
+
+section p:nth-child(2n) {
+    color: white;
+    background-color: brown;
+}
+
+section p:nth-child(3n+1) {
+    color: white;
+    background-color: brown;
+}
+
+section p:nth-child(3n-2) {
+    color: white;
+    background-color: brown;
+}
+
+
+/*! first-of-type */
+#containerTwo :first-of-type{
+    color: white;
+    background-color: deeppink;
+}
+
+/*! last-of-type */
+#containerTwo :last-of-type{
+    color: white;
+    background-color: darkblue;
+}
+
+/*!nth-last-of-type*/
+#containerTwo :nth-of-type(3n){
+    color: white;
+    background-color: green;
+}
+
+/*! focus */
+input:focus{
+    color: blue;
+}
+
+/*! checked */
+input:checked{
+    height: 50px;
+    width: 50px;
+}
+
+#content{
+    display: none;
+}
+
+input:checked + #content{
+    display: block;
+}
+
+p{
+    display: none;
+}
+
+input:checked + p {
+    display: block;
+}
+
+#mainCheckbox:checked ~ p {
+    display: block;
+}
+
+/*! required */
+input:required{
+    background-color: bisque;
+    color: chocolate;
+}
+
+/*! link -(For unvisited links)*/
+a:link{
+    color: brown;
+}
+/*! active -(When the element is being clicked) */
+a:active{
+    color: forestgreen;
+}
+/*! visited -(For visited links)
+a:visited {
+    color: darkslategray;
+}
+/*! any-link - (matches all anchor (<a>) */
+a:any-link{
+    color: gold;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator selectors</title>
+    <link rel="stylesheet" href="./2. combinator_selectors.css">
+</head>
+<body>
+
+
+    <!--!Combinator selectors 
+    1. Descendent (having space)
+    2. Direct Child (>)
+    3. Adjacent Sibling (+)
+    4. General Sibling (~) -->
+    
+    <p>Outer para 1</p>
+    <section>
+        <article>
+            <p>inner Para 1</p>
+            <p>inner Para 1</p>
+            <main>main Tag</main>
+            <p>inner Para 2</p>
+        </article>
+        <p>para 2</p>
+    </section>
+    <p>Outer para 2</p>
+
+    <hr>
+
+
+    <br> <br>
+
+<!--! Case I-->
+
+    <p>outer para 1</p>
+<section>
+        <p>para 1</p>
+        <article>
+            <p>inner para 1</p>
+            <main>main Tag</main>
+            <p>inner para 2</p>
+            <p>inner para 3</p>
+            <p>inner para 4</p>
+            <p>inner para 5</p>
+        </article>
+        <p>para 2</p>
+        <p>para 3</p>
+        <p>para 4</p>
+        <p>para 5</p>
+</section>
+<p>Outer para 2</p>
+<p>Outer para 3</p>
+<p>Outer para 4</p>
+<p>Outer para 5</p>
+</body>
+</html>
+
+<br>
+
+<hr>
+<br> <br>
+
+<!--! Case II-->
+
+
+<section>
+<p>para 1</p>
+<p>para 2</p>
+<p>para 3</p>
+</section>
+
+
+<br><br>
+<hr>
+
+<main>
+    <h5>heading</h5>
+    <h5>heading</h5>
+</main>
+    <h5>heading</h5>

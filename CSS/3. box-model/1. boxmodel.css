@@ -1,0 +1,110 @@
+/*! Box-model properties  
+Describes how elements on a web page are structured and spaced, so that 
+it appears same across all browsers .
+/** 1. content Box
+    It is the main data content box  
+    ex: apply height , width               
+/** 2. Padding
+    It is invisible space between content and the border.
+      ex: 20px(Top) 30px(Right) 40px(bottom) 50px(left);
+      ex: 30px(Top) 40px(left,right)  50px((;
+      ex: 40px(top,bottom) 50px(left,right);
+      ex::20px(all sides)
+/** 3. Border Box        
+    It will apply an outline around the element's content . 
+      ex: border: 2px solid red ; style-none(default),solid,dotted,dashed,double,ridge,groove 
+/** 4. Margin Box         
+    It is the invisible space around the element 
+      ex: 20px(Top) 30px(Right) 40px(bottom) 50px(left);
+      ex: 30px(Top) 40px(left,right)  50px((;
+      ex: 40px(top,bottom) 50px(left,right);
+      ex::20px(all sides)
+/** we can write individually also (margin-top : , padding-top:) */
+/** margin can be negative ( shift the content to left) */
+/** margin too large (shift the content to right) */
+
+/*
+/* ? example 1 */
+#box{
+height: 300px;
+width: 300px;
+border:7px dashed green ;
+padding: 10px 20px 30px 40px;
+margin: 5px;
+}
+
+/* ? example 2 */
+#box1{
+    height: 200px;
+    width: 200px;
+    border: 8px dotted violet;
+}
+
+/*? examples 3 */
+#ActuallyBox {
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    color: white;
+
+margin: 10px 0px 0px 0px;
+margin-top :10px;
+margin-bottom:20px;
+margin-left:30px;
+margin-right:40px;
+
+
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 30px;
+padding-left: 40px;
+}
+
+/* ?Example 4 */
+#navbar1 {
+background-color: rgb(192, 223, 15);
+color: white;
+
+    display: inline-block;
+    border: 10px ridge red ;
+    margin:10px 50px;
+    padding:10px 20px;
+}
+
+/* ?Example 5*/
+#navbar2 {
+    /* border: solid red; */
+    background-color: blueviolet;
+}
+
+#navbar2 div{
+    /*border: solid blue; */
+    display: inline-block;
+    padding: 10px 103px;
+}
+
+#navbar2 div:hover{
+    background-color: red;
+    color: white;
+}
+
+#courses{
+    border: solid blue;
+    ;
+}
+
+#Courses .course{
+    border: dashed red;
+    height: 200px;
+    width: 250px;
+    display: inline-block;
+    padding: 0px;
+    /* box-sizing: border-box; */
+
+
+box-sizing: content-box;
+
+}
+
+
+

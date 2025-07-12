@@ -1,0 +1,35 @@
+/** transition:
+
+/** transition-property:
+/** transition-duration:
+/** transition-delay:
+/** transition-timing-function:             */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#box{
+    height: 300px;
+    width: 300px;
+    border: 4px solid black;
+    background-color: red;
+
+
+    transition-property: all; /** all - all properties */
+    transition-duration: 5s; /** 0s */
+    transition-delay: 2s; /** 0s */
+    transition-timing-function:ease;  
+    /** ease - easy start and end , ease in - slow start , ease out - slow end */
+}
+
+#box:hover {
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: blue;
+}

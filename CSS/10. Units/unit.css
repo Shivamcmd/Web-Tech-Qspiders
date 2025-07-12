@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/*! In Css , there are 2 types  of units 
+/** 1. static  (they will not change )
+eg: px, mm , cm , inch , km 
+/** 2. dynamic (they will change dynamically according to viewport)
+eg: vh (viewport height), vw (viewport width) , em , rem
+
+*/
+
+#box{
+    height: 100px;
+    height: 100m;
+    height: 100cm;
+    height: 100in;
+    height: 100vh;
+    height: 50vh;
+    height: 70vh;
+
+    width: 100vw;
+    width: 50vw;
+
+    /* width: 200px; */
+    border: 10px solid red;
+}
+
+/** example 1 */
+
+#container {
+    /* width: 80vw; */
+    height: 80vh;
+    border: solid red;
+
+    /* display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+
+    font-size: 50px;
+
+}
+
+
+#container article{
+    font-size: 0.5em;
+    height: 50px;
+       /* width: 50%; */
+    border: solid blue;
+
+    /* display: flex; 
+     justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+
+}
+
+#container article div{
+height:50% ;
+font-size: 0.5em;
+font-size: 12.5px;
+/* width: 50%; */
+border: solid green;
+   /* display: flex; 
+     justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+#container article div p {
+height:50% ;
+font-size: 2em;
+/* width: 50%; */
+border: solid purple;
+   /* display: flex; 
+     justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+/** example 2 */
+html{
+    font-size: 50px;
+}
+
+#container2{
+    font-size: 30px;
+    /* font-size: 4vw; */
+
+    /* font-size: 1rem; It will points to the html font size  */
+
+}
+
+#container2 article{
+    font-size: 0.5em;
+    font-size: 0.5rem; /* it will points to the html font size */
+    font-size: 1em; /* it will point to the parent font size */
+    font: 25px;
+}
+
+
+#container2 article div{
+font-size: 0.5em;
+font-size: 1rem; /* it will points to the html font size */
+}
+
+
+#container2 article div p{
+    font-size: 0.5em;
+
+}

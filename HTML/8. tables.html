@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables in html</title>
+</head>
+
+<body>
+    <!--
+    Table will display the data in form of rows and columns 
+    ? tags:
+    table-
+    tr
+    th
+    td
+    thead
+    tbody
+    tfoot  
+    caption
+
+    ? Attributes:
+    border - apply border to table
+    cellspacing
+    cellpadding
+    rowspan
+    colspan
+    align
+-->
+           <center><h1><b>TABLES</b></h1></center>
+
+    <table border="2 " cellspacing="0px" cellpadding="15px" >
+        <caption><b>Student Table</b></caption>
+        <tr>
+            <th>S.NO</th>
+            <th colspan="2">Details</th>
+            <!-- <th>Details</th>  -->
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Shivam</td>
+            <td rowspan="2">B.tech</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Saransh</td>
+            <!-- <th>Details</th>  -->
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Vansh</td>
+            <td>MCA</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Gautam</td>
+            <td>SSC</td>
+        </tr>
+    </table>
+
+
+    <hr>
+    <table border="2" cellspacing="0px" cellpadding="15px">
+        <caption><b>Student Table</b></caption>
+        <tr>
+            <th>S.NO</td>
+            <th>Sname</th>
+            <th>Qualification</th> 
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td rowspan="2">Shivam & saransh</td>
+            <td>B.tech</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <!-- <td>Saransh</td> -->
+            <td>B.tech</td> 
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Vansh</td>
+            <td>MCA</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Gautam</td>
+            <td>SSC</td>
+        </tr>
+    </table>
+
+
+`
+    <hr>
+    <table border="2" cellspacing="0px" cellpadding="15px">
+        <caption><b>Student Table</b></caption>
+        <thead style="background-color: rgb(120, 120, 195); color: white;">
+            <tr>
+                <th>S.NO</td>
+                <th colspan="2">Details</th>
+                <!-- <th>Details</th>  -->
+            </tr>
+        </thead>
+
+        <tbody style="background-color: yellow;color: black;"> 
+            <tr>
+            <td>1</td>
+            <td>Shivam</td>
+            <td rowspan="2">B.tech</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Saransh</td>
+            <!-- <th>Details</th>  -->
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Vansh</td>
+            <td>MCA</td>
+        </tr>
+</tbody>
+       
+<tfoot style="background-color: rgb(35, 191, 61); color: white;">
+    <tr>
+        <td>4</td>
+        <td>Gautam</td>
+        <td>SSC</td>
+    </tr>
+</tfoot>
+       
+    </table>
+
+    <hr>
+<center><b><h2>Table Homework</h2></b></center>
+<table border="1" cellspacing="0px" cellpadding="12px">
+<caption><b>DETAILS</b></caption>
+<tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+</tr>
+<tr>
+    <td>Priya</td>
+    <td>Sharma</td>
+    <td>24</td>
+</tr>
+<tr>
+    <td>Arun</td>
+    <td>Singh</td>
+    <td>32</td>
+</tr>
+<tr>
+    <td>Sam</td>
+    <td>Watson</td>
+    <td>41</td>
+    
+</tr>
+</table>
+
+<hr>
+<table border="1" cellspacing="0px" cellpadding="12px">
+<caption>A test table with merged cells</caption>
+
+<tr>
+    <td rowspan="2"></td>
+    <th colspan="2">Average</th>
+    <th rowspan="2">Red eyes</th>
+  </tr>
+  <tr>
+    <th>height</th>
+    <th>weight</th>
+  </tr>
+  <tr>
+    <th>Males</th>
+    <td>1.9</td>
+    <td>0.003</td>
+    <td>40%</td>
+  </tr>
+  <tr>
+    <th>Females</th>
+    <td>1.7</td>
+    <td>0.002</td>
+    <td>43%</td>
+  </tr>
+
+  
+  <table border="1" cellpadding="10" cellspacing="0">
+    <hr>
+    <caption><strong>Health Chart</strong></caption>
+    
+    <tr>
+      <td rowspan="2">State of Health</td>
+      <td colspan="2"><center>Fasting Value</center></td>
+      <td>After Eating</td>
+    </tr>
+    
+    <tr>
+      <td>Minimum</td>
+      <td>Maximum</td>
+      <td>2 hours after eating</td>
+    </tr>
+    
+    <tr>
+      <td>Healthy</td>
+      <td>70</td>
+      <td>100</td>
+      <td>Less than 140</td>
+    </tr>
+    
+    <tr>
+      <td>Pre-Diabetes</td>
+      <td>101</td>
+      <td>126</td>
+      <td>140 to 200</td>
+    </tr>
+    
+    <tr>
+      <td>Diabetes</td>
+      <td>More than 126</td>
+      <td>N/A</td>
+      <td>More than 200</td>
+    </tr>
+  </table>
+ 
+  <hr>
+  <table border="5" cellspacing="0" cellpadding="10">
+    <tr>
+      <th colspan="6">Time Table</th>
+    </tr>
+    <tr>
+      <th rowspan="6">Hours</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+    </tr>
+    <tr>
+      <td>Math</td>
+      <td>Science</td>
+      <td>Math</td>
+      <td>Science</td>
+      <td>Arts</td>
+    </tr>
+    <tr>
+      <td>Math</td>
+      <td>Science</td>
+      <td>Math</td>
+      <td>Science</td>
+      <td>Arts</td>
+    </tr>
+    <tr>
+      <th colspan="5">Lunch</th>
+    </tr>
+    <tr>
+      <td>Math</td>
+      <td>Science</td>
+      <td>Math</td>
+      <td rowspan="2" colspan="2"  align="center">Project</td>
+    </tr>
+    <tr>
+      <td>Math</td>
+      <td>Science</td>
+      <td>Math</td>
+    </tr>
+  </table>
+
+  <hr>
+<table border="2" cellspacing="0" cellpadding="25" >
+    <tr>
+        <td colspan="3"><center><b>Fruits and Vegetables</b></center> </th>
+      </tr>
+
+  <tr>
+    <th>Name</th>
+    <th>Picture</th>
+    <th>Fruit/Vegetable</th>
+  </tr>
+
+<tr>
+      <td>Apple</td>
+      <td><img src="https://imgs.search.brave.com/JDKDqPXtbBczONt--jS2k-BNe2456IRWKgy2bFqaCgg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTY0/MDg0MTExL3Bob3Rv/L2FwcGxlcy5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9ZUFq/WVZXV2hyRVZLTVZW/dnpTak56RlU5ZHRq/aDJhSDJ5cGptY2xE/YVVpMD0" alt="" height="80px" width="150px"></td>
+      <td><center>Fruit</center></td>
+    </tr>
+    
+    <tr>
+      <td>Carrot</td>
+      <td><img src="https://imgs.search.brave.com/RKyMp5-uKxJCgexXHTYqLaFP9ScRRIOR1cqKpo2XjNQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTg1/MDExMDA0L3Bob3Rv/L29yZ2FuaWMtY2Fy/cm90cy5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9Z3VKdG5u/OWNJb1JmRW9LcWlh/a0lSWVp2NnRtbVBU/bU1QSm5INmFVYk1T/bz0" alt=""  height="80px" width="150px"></td>
+      <td><center>Vegetable</center></td>
+    </tr>
+    
+    <tr>
+      <td>Orange</td>
+      <td><img src="https://imgs.search.brave.com/js8CnxL1lpDAml0hs7XdnJ08yr1zLeZu_y-qx-nD0y8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzIxLzM2LzI1/LzM2MF9GXzIxMzYy/NTQzXzFFYXlqOFVY/YkRLSVk0Vk10NUlD/M1FtTHJBR2NjTzlV/LmpwZw" alt=""height="80px" width="150px"></td>
+      <td><center>Fruit</center></td>
+    </tr>
+    </table>
+
+<hr>
+        <table border="2" cellspacing="0" cellpadding="10px">
+            <caption><b>Example 1</b></caption>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+            </tr>
+            <tr>
+                <td><img src="https://imgs.search.brave.com/bTE0n37-PE9c7BtKxittkNKeLm7NRmOf2PbMkmOjri4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdG9y/ZS5lbWVyYWxkbGFi/cy5jb20vY2RuL3No/b3AvcHJvZHVjdHMv/RW1lcmFsZF9BbWxh/X0ZydWl0X0ltYWdl/LnBuZz92PTE3MTU4/MDk4MjMmd2lkdGg9/NjAw" alt="" height="80px" width="150px"></td>
+                <td><img src="https://imgs.search.brave.com/kFceJSF-SFfyueWQ-mm1vOXH6Agt3G3MW_kYoutTl3s/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDY3/MzI4MjUwL3Bob3Rv/L21hbmdvLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1jWVNI/ZUV4a0haVllRTTZ4/a1dlaGNsZ1lEcWtt/QjdvNEU0OTR4ejVH/YlhzPQ" alt=""height="80px" width="150px"></td>
+                <td><img src="https://imgs.search.brave.com/7pwOAYI2l85ctEQwfHlK-11JtOoPmIDM106S2OPm7G8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/LzdhLyhDaXRydXNf/bGltZXR0YSlfTW9z/YW1iaV9hdF9hX21h/cmtldF9pbl9TZWV0/aGFtbWFkaGFyYS5q/cGc" alt=""height="80px" width="150px"></td>
+                <td><img src="https://imgs.search.brave.com/tZ3u9HwBQBueWADN5OjrNMKx-Tyy-n14J9WsviQEIvA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2JjLmNhL2tpZHMv/aW1hZ2VzL3dlaXJk/X3dpbGRfZnJ1aXRz/X3BpdGF5YS5qcGc" alt=""height="80px" width="150px"></td>
+            </tr>
+            <tr>
+                <td><img src="https://imgs.search.brave.com/Sihl9pEikECeLFLSOnRHQD2wYb2VidzRCPqPQvnjJ1Y/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAwLzc0LzE1Lzk1/LzM2MF9GXzc0MTU5/NTU2XzY3bjU4MjNW/N0VpODdhNGc2Skpu/WUhDMHlNU28xQUV5/LmpwZw" alt="" height="80px" width="150px"></td>
+                <td><img src="https://imgs.search.brave.com/FLd27x86dXXwLm86MR7P3GmORz06o3TebMqycJg7I9Y/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YmVsbGVmb3Jlc3Rh/bmltYWxob3NwaXRh/bC5jb20vZmlsZXMv/U2hpaFR6dS1vcmln/aW5hbC5qcGVn" alt=""height="80px" width="150px"></td>
+                <td><img src="https://imgs.search.brave.com/tEkBmAzOKT5Pg1wKgqbmyWTxl82FMGdUfZj4D6pk72A/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTMx/NzAwNjcvcGhvdG8v/cXVpcmt5LWhvcnNl/LTIuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPXVuQ0NwOFdR/SW4ycVJfWHNQcm03/UklXNzVaNHVWOVZJ/dFh1S2Nvc05iNXM9" alt=""height="80px" width="150px"></td>
+                <td><img src="https://imgs.search.brave.com/9CEKL5C87s_rVx8XJNHspMHrh4MpUolD_b_9wxgA1iE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDg4/NjUyNzkyL3Bob3Rv/L2phY2stcmFiYml0/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz0wLThxR2JfWkJa/WVhhVUxFM3dSQlFk/bEFnWE9oLUdZdm9v/ZlVqT2VzSk40PQ" alt=""height="80px" width="150px"></td>
+            </tr>
+            <tr>
+                <td><img src="https://imgs.search.brave.com/qtpTMf_5makdHtowr83hNxux_E_2te5umMM9n7KIObU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9kcnZh/aWRqaS5jb20vY2Ru/L3Nob3AvYXJ0aWNs/ZXMvQml0dGVyX01l/bG9uXzEwMjR4MTAy/NF8zN2FiOTgzOC05/M2Y2LTRjODgtODNi/NC01MDg0NDMxNzRi/NzguanBnP2Nyb3A9/Y2VudGVyJmhlaWdo/dD0yMDQ4JnY9MTY5/OTUxNDIyNSZ3aWR0/aD0yMDQ4" alt=""height="80px" width="150px"></td>
+                <td><img src="https://imgs.search.brave.com/Cd2ajC9e1bodgfHvzS0scCm6uF0RADDgRIGIggDiZtk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzI4LzMzLzk2/LzM2MF9GXzIyODMz/OTY2MF96bmtZOHdY/dmpYTm5xeWxCd1V3/d2ZmVDFFNXllcmpC/Zy5qcGc" alt=""height="80px" width="150px"></td>
+                <td><img src="https://imgs.search.brave.com/002-qM0eiXl63UtIr1BXTNezCOFzh-im_m2XJA0tiWA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vMi5icC5i/bG9nc3BvdC5jb20v/LUMtYkpJZ0pCQ0tn/L1RrQ2pEb0FtRHdJ/L0FBQUFBQUFBQk9R/LzRlMlU4TjlzUUw0/L3M2NDAvZGVlLWN1/aXNpbmUtZ3JlZW4t/Y2F1bGlmbG93ZXJf/MDIuSlBHP3Jlc2l6/ZT02NDAsNDI0" alt=""height="80px" width="150px"></td>
+                <td><img src="https://imgs.search.brave.com/M0k0g-fhcKWFJfLeD_E0f55L1tfd-5KkR0qfFeK8vtY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTIx/NDA1OTI3L3Bob3Rv/L2ZyZXNoLWF1YmVy/Z2luZXMuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVR6LXVK/MXo2aE1qaGsxdXJ4/SEVqekhxNzd3bmY1/QkNPTWhqX3NXS0Jk/MEk9" alt=""height="80px" width="150px"></td>
+            </tr>
+    </table>
+
+    <hr>
+
+    <table border="2" cellspacing="2" cellpadding="60px">
+<caption><b>HTML Table</b></caption>
+<tr>
+    <td colspan="2">Cell 1</td>
+    <td>Cell 2</td>
+    <td>Cell 3</td>
+</tr>
+<tr>
+<td rowspan="3">Cell 4</td>
+<td>Cell 5</td>
+<td>Cell 6</td>
+<td>Cell 7</td>
+</tr>
+<tr>
+    <td colspan="3">Cell 8</td>
+</tr>
+
+<tr>
+    <td>Cell 9</td>
+    <td colspan="2">Cell 10</td>
+</tr>
+
+    </table>
+
+<hr>
+<table border="2">
+  <caption><b>HTML Table</b></caption>
+  <tr>
+    <th>Level1</th>
+    <th>Level2</th>
+    <th>Level3</th>
+    <th>Info</th>
+    <th>Name</th>
+  </tr>
+
+  <tr>
+<td rowspan="6">System</td>
+<td rowspan="4">Sytem Apps</td>
+<td rowspan="3">SystemEnv</td>
+<td>App Test</td>
+<td>foo</td>
+  </tr>
+
+  <tr>
+<!-- <td>rowspanned</td> -->
+<!-- <td>rowspanned</td> -->
+<!-- <td>rowspanned</td> -->
+<td>App Memory</td>
+<td>foo</td>
+  </tr>
+
+  <tr>
+    <!-- <td>rowspanned</td> -->
+    <!-- <td>rowspanned</td> -->
+    <!-- <td>rowspanned</td> -->
+    <td>App Test</td>
+    <td>bar</td>
+      </tr>
+
+  <tr>
+ <!-- <td>rowspanned</td> -->
+    <!-- <td>rowspanned</td> -->
+    <td>SystemEnv2</td>
+    <td>App Test</td>
+    <td>bar</td>
+  </tr>
+
+  <tr>
+     <!-- <td>rowspanned</td> -->
+    <td rowspan="2">System Memory</td>
+    <td rowspan="2">Memory Test</td>
+    <td>Memory Func</td>
+    <td>foo</td>
+  </tr>
+
+  <tr>
+    <!-- <td>rowspanned</td> -->
+    <!-- <td>rowspanned</td> -->
+    <!-- <td>SystemEnv2</td> -->
+    <td>Apes Test</td>
+    <td>foor</td>
+  </tr>
+
+   <table>
+   
+
+    
+</body>
+
+</html>

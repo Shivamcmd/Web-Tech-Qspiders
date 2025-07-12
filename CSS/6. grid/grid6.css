@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(237, 235, 235);
+}
+
+section {
+    height: 690px;
+    width: 1100px;
+    background-color: rgba(250, 249, 248, 0.973);
+    border: 8px solid rgb(162, 162, 162);
+
+
+    display: grid;
+    grid-template-columns: auto; }
+
+    section {
+    column-gap: 30px;
+    gap: 5px;
+
+    margin: 150px auto;
+    /* padding: 50px 20px 8px 30px; */
+
+}
+
+div {
+    
+    /* background-color: red; */
+    /* border: solid rgba(0, 0, 0, 0.434); */
+    color: rgba(253, 252, 252, 0.893);
+    font-size: 25px;
+    font-weight:800;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* border-radius: 10px; */
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+section div:nth-child(1) {
+    background-color: rgb(22, 164, 221);
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 1;
+    grid-column-end: 8;
+
+    justify-content: left;
+    padding-left: 20px;
+
+
+}
+
+section div:nth-child(2) {
+    background-color:  rgba(253, 252, 252, 0.893);
+    grid-row-start: 2;
+    grid-row-end: 6;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+section div:nth-child(3) {
+    background-color:  rgb(46, 175, 34);
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    grid-column-start: 2;
+    grid-column-end: 5;
+    /* align-items: start;
+    padding-top: 40px; */
+
+}
+
+section div:nth-child(4) {
+    background-color: rgb(173, 20, 204);
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+section div:nth-child(5) {
+    background-color: rgb(238, 177, 9);
+    grid-row-start: 4;
+    grid-row-end: 6;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+section div:nth-child(6) {
+    background-color:  rgb(238, 177, 9);
+    grid-row-start: 4;
+    grid-row-end: 6;
+
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+
+section div:nth-child(7) {
+    background-color:  rgba(253, 252, 252, 0.893);
+    grid-row-start: 2;
+    grid-row-end: 6;
+
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+
+section div:nth-child(8) {
+    background-color:  rgb(45, 15, 211);
+    grid-row-start: 6;
+    grid-row-end: 7;
+
+    grid-column-start: 1;
+    grid-column-end: 8;
+
+    justify-content: left;
+    padding-left: 20px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline event</title>
+</head>
+<body>
+    <h1> Inline Events</h1>
+    <button onclick="alert(`you clicked on this button`)"> click here</button>
+
+    <h2 id="demo" onclick="fun1()" onmouseover="fun2()" onmouseout="fun3()">
+    please hover on this tag or click on the tag 
+    </h2>
+
+    <section id="productContainer">
+        <button onclick="addProduct()">
+            add this product into this cart 
+        </button>
+    </section>
+
+    <script src="./event1.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+/** In Media queries , we learn about :
+1. orientation
+2. grid properties 
+*/
+
+@media (orientation:landscape){
+    h1::after{
+        content: "landscape";
+    }
+}
+
+@media (orientation:portrait){
+    h1::after{
+        content: "portrait";
+    }
+}
+
+#gridContainer{
+    display: grid;
+    height: 1200px;
+
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#gridContainer div{
+    border: solid gray;
+    border-radius: 8px;
+}
+
+
+@media screen and (800px<=width) {
+ #gridContainer{
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+ }   
+
+
+}
+
+@media screen and (400px<= width <=800px)
+{
+    #gridContainer{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
+}
+
+@media screen and (width <=400px )
+{
+    #gridContainer{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(10,1fr);
+    }
+}

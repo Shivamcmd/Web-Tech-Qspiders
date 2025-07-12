@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Tags</title>
+</head>
+<body>
+ <!-- !practice of marquee tag 
+  
+ -->
+
+  <marquee style="background-color:yellow;"behavior="alternate" loop="5" >I AM HEADER</marquee>
+  <br>
+  <marquee style="background-color:pink;"behavior="slide"> I AM NAVBAR</marquee>
+  <br>
+
+<marquee style="background-color: aqua; height: 350px; width:345px;" direction="up" behaviour="scroll" >I AM ASIDE LEFT</marquee>
+<marquee style="background-color: rgb(0, 255, 42); height: 350px; width:800px;" direction="up" behaviour="alternate">I AM CONTENT</marquee>
+<marquee style="background-color: rgb(123, 255, 0); height: 350px; width:345px;" direction="down" behaviour="slide">I AM ASIDE RIGHT</marquee>
+<br>
+<marquee style="background-color:rgb(242, 0, 255);" behaviour="slide" direction="down">I AM FOOTER</marquee>
+
+<br><br>
+
+    <hr>
+
+<br><br>
+
+
+    <!--
+    ! Marquee Tag 
+    
+    implements scrollable content in wepages .
+    ?Attributes 
+    1. direction  ( values : left , right , up , down)
+    2. behaviour (values : scroll , slide , alternate)
+    3. scrollamount ( values - 3,6,9 6 is default)
+    4. height & width
+    5. loop
+    -->
+
+
+    <!-- text as content-->
+   <marquee>This is Marquee</marquee>
+
+   <br>
+
+<!-- text as content with colors-->
+<marquee style="background-color: red; color: white;">This is Marquee</marquee>
+
+<br>
+
+<!-- image as content -->
+ <marquee> <img src="https://images.pexels.com/photos/29251714/pexels-photo-29251714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" height="200px"></marquee>
+
+ <!--? Marquee with Attributes -->
+
+ <!-- direction attribute-->
+<marquee  direction="right">This is Marquee scrolling right</marquee>
+<marquee  direction="left">This is Marquee scrolling left</marquee>
+<marquee  direction="up">This is Marquee scrolling up</marquee>
+<marquee  direction="down">This is Marquee scrolling down</marquee>
+
+<!-- behaviour attribute-->
+ <marquee behavior="scroll">This is Scrolling</marquee>
+ <marquee behavior="alternate">This is alternate</marquee>
+ <marquee behavior="slide">This is Slide</marquee>
+
+ <!--height and width attribute-->
+ <marquee style="background-color: aqua; height:100px; width: 200px;">This is scrolling</marquee>
+ <marquee style="background-color: aqua; height:100px; width: 200px;">This is scrolling</marquee>
+ <marquee style="background-color: aqua; height:100px; width: 200px;">This is scrolling</marquee>
+
+ <!--scrollamount attribute-->
+ <marquee behavior="scroll" direction="right" scrollamount="6"> 
+    <img src="https://images.pexels.com/photos/29251714/pexels-photo-29251714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" height="200px">
+</marquee>
+
+<marquee behavior="scroll" direction="right" scrollamount="12"> 
+    <img src="https://images.pexels.com/photos/29251714/pexels-photo-29251714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" height="200px">
+</marquee>
+
+<marquee behavior="scroll" direction="right" scrollamount="18"> 
+    <img src="https://images.pexels.com/photos/29251714/pexels-photo-29251714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" height="200px">
+</marquee>
+
+
+</body>
+</html>

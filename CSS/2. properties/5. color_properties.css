@@ -1,0 +1,100 @@
+/*! color properties */
+/** color name , rgb(255,0,0) , rgba , HEX(#rrggbb), HEX(#rgb), HSL(0,0,225) , HSLA(125, 25,250, 0.6)
+/** rgb- red geen blue
+/** rgba - red green blue alpha
+/** HEX - hexadecimal
+/** HSL - hue , saturation , lightness
+/**  HSLA - Hue , S- saturation , L- lightness , A- alpha **/
+
+h1{
+    color: white;
+}
+
+body {
+
+ /** 1. color name */
+    background-color: skyblue;
+    background-color: red;
+    background-color: teal;
+
+/**  2. rgb (red green blue )  */
+ /*     r- red , g- green ,b- blue
+        syntax: rgb
+        each color range b/w 0-255 
+ */
+background-color: rgb(255,0,0);
+background-color: rgb(255,0,255);
+background-color: rgb(0,255,0);
+background-color: rgb(0,0,0);
+background-color: rgb(255,255,255);
+background-color: rgb(0,0,255);
+background-color: rgb(255,0,0);
+
+
+/**  3. rgba (red green blue alpha) */
+/*  similar to rgb
+    sybtax: rgba
+    alpha - 0.0 - 1.0
+ */
+background-color: rgba(0, 0, 255, 1);
+background-color: rgba(255, 0, 255, 1);
+background-color: rgba(255, 255, 255, 1);
+background-color: rgba(0, 0, 255, 0.5);
+background-color: rgba(0, 255, 255, 0.7);
+background-color: rgba(0, 0, 255, 1);
+background-color: rgba(255, 0, 255, 1);
+
+
+/**  4.1 HEX (hexadecimal-1 ) */
+/* syntax: #rrggbb
+   ranges b/w 0-9 and a-f 
+*/
+    
+background-color: #ff0000;
+background-color: #ffffff;
+background-color: #00ff00;
+background-color: #000000;
+background-color: #112233;
+background-color: #528850;
+background-color: #20a539;
+
+/** 4.2  HEX (hexadecimal-2 ) */
+/*  syntax: #rgb
+    ranges b/w 0-9 and a-f 
+*/
+background-color: #f7f;
+background-color: #ff8;
+background-color: #001;
+background-color: #0bb;
+background-color: #123;
+background-color: #abc;
+background-color: #2ff;
+
+/** 5. HSL (Hue saturation lightness) */
+/* syntax:hsl(0,25,45,456) */
+/*?    hue- its a color circle of 360 degree 
+/*^             - 0 for red 
+/*^             - 125 for green
+/*^             - 225 for blue 
+/*^             - 360 for red  
+
+/*?  saturation - it defines the grayness to the color 
+/*^             - as we decrease to 0 , it become fully grey
+
+/*?  lightness  - its for the brightness 
+/*^             -0% for black/darkness
+/*^             - 50% for default (actual color)
+/*^             - 100% for white /lightness   ^*/
+
+background-color: hsl(25, 25%, 85%);
+background-color: hsl(249, 78%, 37%);
+background-color: hsl(28, 85%, 45%);
+background-color: hsl(135, 89%, 47%);
+
+/** 6. HSLA (Hue saturation lightness alpha) */
+background-color: hsla(12, 95%, 45%, 0.5);
+background-color: hsla(314, 86%, 36%, 0.5);
+background-color: hsla(255, 95%, 45%, 0.5);
+background-color: hsla(313, 83%, 39%, 0.5);
+
+}

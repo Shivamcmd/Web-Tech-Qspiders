@@ -1,0 +1,71 @@
+#box
+{
+    height: 500px;
+    width: 850px;
+    font-size: 50px;
+
+/*! border in Css properties */
+/*& border : border-width , border-style , border-color */
+
+/** border : border-top , border-bottom , border-left , border-right
+/** border : boder-top-style ,border-bottom-style , border-left-style, border-right-style
+/** border : boder-top-width ,border-bottom-width , border-left-width, border-right-width
+/** border : border-top-left-radius, border-top-right-radius,border-bottom-left-radius,border-bottom-right-radius */
+/*^ border : border-radius (b-t-l-r .....)
+/*& border : border-collapse /separate
+/** border : border-spacing
+
+    border-width:5px;       
+    /*  1.5px (default), any number px      */
+    
+
+    border-style: dotted;
+    /* none (default) , solid, dotted , dashed , double , ridge , groove */
+
+    border-color: blueviolet;
+    /* black (d) , any color */
+    /* border-top:2px solid red; */
+
+    border-top-width: 10px;
+    border-top-style: dotted;
+    border-color: rgb(0, 255, 26);
+
+    border-bottom: 10px dashed pink;
+    border-left: 10px dotted red;
+    border-right: 10px ridge yellow;
+}
+
+.box{
+    height: 350px;
+    width: 380px;
+    border: dashed;
+
+    border-radius: 20px 30px 40px 50px;
+
+
+    /** border-top-left-radius:20px;
+   /** border-top-right-radius:30px;
+   /** border-bottom-left-radius:40px;
+   /** border-bottom-right-radius:50px;  **/
+
+    border-radius:20px 30px 40px ;
+     border-radius:20px 30px ;
+      border-radius:20px  ;
+       border-radius:20%;
+
+}
+
+table{
+border-collapse:initial;
+border-spacing: 30px;
+
+
+border-radius: 25px;
+border: 3px double pink;
+
+}
+
+td{
+    border-radius: 5px;
+    border: 5px double rgb(74, 44, 224);
+}

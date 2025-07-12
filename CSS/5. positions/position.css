@@ -1,0 +1,103 @@
+/** position in css */
+/* used for controlling the placement and behavior of elements within a webpage.  */
+/** position: absolute,fixed ,relative ,sticky,static */
+/** relative – Shifted from Its Original Spot.
+/** sticky – Sticks Upon Scrolling.
+/** fixed – Anchored to the Viewport.
+/** absolute – Detached and Positioned Precisely. 
+we can use left , right , top , bottom as per requirements.
+*/
+
+
+/** example-1  (absolute/relative) */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+section{
+    height: 600px;
+    width: 900px;
+    background-color:skyblue;
+    border:solid;
+    margin: 40px auto;
+}
+
+section div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: solid black ;
+    color: white;
+    display: inline-block;
+}
+
+section div:nth-child(1){
+    background-color: red;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+
+section div:nth-child(2){
+    background-color: pink;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+section div:nth-child(3){
+    background-color: yellow;
+    position: absolute;
+    bottom:0px;
+    left: 0px;}
+
+    section div:nth-child(4){
+    background-color: rgb(87, 46, 210);
+    position: absolute;
+    bottom:0px;
+    right: 0px;}
+
+     section div:nth-child(5){
+    background-color: rgb(87, 46, 210);
+    position:relative;
+    bottom:0px;
+    right: 0px;}
+
+/** fixed - position */
+
+button{
+    background-color: teal;
+    color: white;
+    border: solid black;
+    padding:10px 20px ;
+    border-radius: 10px;
+
+    position: fixed;
+    bottom: 10px;
+    right:10px;
+}
+/** sticky - position */
+    nav{
+        border: solid;
+        text-align: center;
+        background-color: teal;
+        color: white;
+        padding: 10px;
+
+
+        position: sticky;
+        top: 0px;
+
+    }
+
+/** sticky - position */
+    .title{
+        position: sticky;
+        top: 0px;
+
+        background-color: teal;
+        color: white;
+    }

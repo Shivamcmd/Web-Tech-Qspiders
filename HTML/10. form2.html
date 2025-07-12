@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+
+? forms attributes
+>>> action ---- it will decide to where we have to navigate once after submitted 
+>>> method ----  It will specify the type action to be performed
+              GET - it will show the data in the URL
+              POST - it will semd to server side 
+>>> target ----  _self , _blank  (open form in same or another page )
+>>> autocomplete - "on" , "off"  ( it gives suggestions)
+>>> novalidate  - it will not validate anything like submit         
+?Pattern attribute allows REGEX Expression as a value  []{} 
+[] - indicate range 
+{} - indicate length
+
+eg: [0-9] {10}
+eg: [a-z] {8}
+eg: [A-Z] {,8}
+eg: [A_Z] {8,}
+eg: [A-Za-z0-9] {8}
+eg: [6-9] {1} [0-9] {9}
+
+?title attribute allows popup title to the field
+we can write anything according to input 
+-->
+
+    <form>
+        <label for="">Name:</label>
+        <input type="text" name="userName" value="shivam"> <br> <br>
+
+        <label for=""> pattern</label>
+        <input type="text" name="inputone" pattern="[a-z]{8}" title="input must be lowercases only">
+        <br> <br>
+
+        <label for=""> pattern</label>
+        <input type="text" name="inputtwo" pattern="[A-Z]{8}" title="input must be uppercases only">
+        <br> <br>
+
+        <label for=""> pattern</label>
+        <input type="tel" name="inputthree" pattern="[0-9]{10}" title="mobile no must be 10 digits only">
+        <br> <br>
+
+        <label for=""> pattern</label>
+        <input type="tel" name="inputFour" pattern="[7-9]{1}[0-9]{9}" title="mobile no must be 10 digits only">
+        <br><br>
+
+        <label for="pwd"> Password</label>
+        <input type="password" name="inputFive" id="pwd" pattern=".{8,}" title="eight or more characters ">
+
+    </form>
+
+
+    <hr>
+
+<form novalidate autocomplete="on">
+
+
+<fieldset>
+    <center><legend>form Attributes</legend></center>
+
+Name: <input type="text" name="userName" required/> <br><br>
+Email : <input type="email" name="userEmail"/> <br> <br>
+
+<button>Submit</button>
+
+</fieldset>
+
+    </form>
+</body>
+
+</html>

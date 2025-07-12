@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Qspiders </title>
+    <link rel="stylesheet" href="./style.css">
+
+<style>
+    h2{
+color: blue;
+}
+  
+p{
+    background-color: white;
+    color: black;
+   }
+</style>
+
+</head>
+<body>
+    
+<h1 style="color: red;">This is Inline </h1>
+<h2>This is Internal </h2>
+<h3>This is External </h3>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius iste accusantium laudantium </p>
+
+ <!--
+    ? Types of CSS  (3 different ways of adding css to html document)
+    1. Inline CSS
+            style attribute
+
+    2. Internal CSS
+            style tag ( inside head tag)
+
+    3. External CSS
+            external css file  (with tag names , key value pairs in {}.
+-->
+
+*/
+
+    <!--! what if , i apply those three at a same time -
+<!--* 1. All styles will apply 
+<!--* 2. Latest style override karega
+<!--* 3. Priority will be inline > internal > external CSS
+    -->
+
+    <!--?--------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!--
+    !selectors 
+    ?These are patterns used to select and style HTML elements
+    ? They tell the browser which elements a set of CSS rules should apply to. -->
+<!--
+<!--* 1. simple selectors 
+        1.1 Tag name ( individually - h1, h2 , h3 ,div , p , b , i,u )
+        1.2 Grouping (style in group of tags - h1, h2 , h3 , div , p , b , i , u)
+        1.3 Universal  * (applies style to whole html page)
+        1.4 id - (#) to assign unique style properties
+        1.5 class - (.) - to assign style properties to classified ones 
+        
+<!--* 2. combinator selectors 
+      2.1  Descendant (space) - grandfather to grandchildren relation
+      2.2  Child (>) - direct child
+      2.3  Adjacent sibling (+) - ek leave krke , dusra sibling
+      2.4  General sibling (~) - simple sibling ( real brother)
+
+<!--*   3. Pseudo- classes Selectors 
+:hover      --  (applyes effects after hover )
+:fist child  --  (Selects the first child of a parent)
+:last child  --  (Selects the last child of a parent)
+:nth child   --  (no/even /odd/2n /2n+1/ any expresion)
+:first-of-type -- (First of its type among siblings)
+:last-of-type  -- (Last of its type among siblings )
+:nth-last-of-type -- (number/ even / odd / 2n / 2n+1 / any expression)
+:checked         --  (Matches checkboxes/radios that are checked)
+:required   --  (targets form fields that have the required attribute)
+:focus      --  (When the element (like input) is focused)
+:read-only  --  (targets form fields or elements that are not editable.)
+:active     --  (When the element is being clicked)
+:link       --  (For unvisited links)
+:visited    --  (For visited links)
+:any-link   --  (matches all anchor (<a>) elements with an href attribute)
+<!--*  4. Pseudo - element Selectors 
+
+<!--*   5. Attribute Selectors 
+    
+-->
+</body>
+</html>

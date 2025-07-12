@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists in html </title>
+</head>
+<body>
+    
+    <!--
+    ! Ordered lists in html 
+    tags: ol, li 
+    attributes : type , start , reversed
+-->
+
+    <ol>
+        <li>shivam</li>
+        <li>rahul</li>
+        <li>ram</li>
+        <li>shyam</li>
+        <li>Krishna</li>
+    </ol>
+
+<!-- Ordered list with types-->
+
+<ol type="i" >     <!--1(default), A,a, I , i -->
+    <li>shivam</li>
+    <li>rahul</li>
+    <li>ram</li>
+    <li>shyam</li>
+    <li>Krishna</li>
+</ol>
+
+
+<ol type="1" start="5">    
+    <li>shivam</li>
+    <li>rahul</li>
+    <li>ram</li>
+    <li>shyam</li>
+    <li>Krishna</li>
+</ol>
+
+
+<ol type="a" start="50">
+    <li>shivam</li>
+    <li>rahul</li>
+    <li>ram</li>
+    <li>shyam</li>
+    <li>Krishna</li>
+</ol>
+
+<ol type="i" start="50">
+    <li>shivam</li>
+        <li>rahul</li>
+        <li>ram</li>
+        <li>shyam</li>
+        <li>Krishna</li>
+</ol>
+
+<ol type="i" start="50" reversed>
+    <li>shivam</li>
+        <li>rahul</li>
+        <li>ram</li>
+        <li>shyam</li>
+        <li>Krishna</li>
+
+<hr>
+
+ <!--!unordered list--
+ tags : ul,li
+attributes: type  = disc , circle , square-->
+
+           <ul>
+            <li>shivam</li>
+            <li>rahul</li>
+            <li>ram</li>
+            <li>shyam</li>
+            <li>Krishna</li>
+           </ul>
+
+           <ul type="disc">   <!--disc is default = bullets-->
+            <li>shivam</li>
+            <li>rahul</li>
+            <li>ram</li>
+            <li>shyam</li>
+            <li>Krishna</li>
+           </ul>
+
+<hr>
+
+<!-- !description list-->
+<!-- tags - dl , dt , dd
+     
+ -->
+<dl >
+            <dt>Actor</dt>
+            <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                 Quaerat quibusdam sapiente asperiores sed libero 
+                fugiat repellat perferendis aspernatur. Fugit amet nihil eos ipsa,
+                 repellat perspiciatis molestiae labore omnis esse alias!
+            </dd>
+
+            <dt>Actresses</dt>
+            <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat quibusdam sapiente asperiores sed libero 
+               fugiat repellat perferendis aspernatur. Fugit amet nihil eos ipsa,
+                repellat perspiciatis molestiae labore omnis esse alias!</dd>
+
+            <dt>Director</dt>
+            <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat quibusdam sapiente asperiores sed libero 
+               fugiat repellat perferendis aspernatur. Fugit amet nihil eos ipsa,
+                repellat perspiciatis molestiae labore omnis esse alias!</dd>
+            
+            <dt>Cinematographer</dt>
+            <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat quibusdam sapiente asperiores sed libero 
+               fugiat repellat perferendis aspernatur. Fugit amet nihil eos ipsa,
+                repellat perspiciatis molestiae labore omnis esse alias!</dd>
+</dl>
+
+        <hr>
+
+
+<h3>nested list #1</h3>
+
+           <!--!nested lists--
+           lists under list -->
+<ol>
+<li>Input device 
+        <ol>
+        <li type="a">Direct input
+        <ul>
+            <li>Scanner</li>
+        </ul>
+ </li>
+
+        <li type="a">Indirect input
+            <ul>
+                         <li>Keyboard</li>
+                         <li>Mouse</li>
+            </ul>
+        </li>
+    </ol>
+   </li>
+
+    <li>Output device
+        <ol>
+            <li type="a">Monitor
+                <ul>
+                    <li>CRT Monitor</li>
+                    <li>LCD Monitor</li>
+                </ul>
+            </li>
+            <li type="a">Speaker</li>
+        </ol>
+    </li>
+
+    <li>Processing device
+        <ol>
+            <li type="a">ALU
+                <ul>
+                    <li>AU</li>
+                    <li>LU</li>
+                </ul>
+            </li>
+            <li type="a">CU</li>
+        </ol>
+    </li>
+
+    <li>Storage device
+    <ol>
+        <li type="a">primary storage
+    <ul>
+        <li>ram
+            <ol type="I">
+                <li>SRAM</li>
+            <li>DRAM</li>
+        </ol>
+        </li>
+    </ul>
+        </li>
+    </ol>
+    </li>
+</ol>
+
+<br>
+<hr>
+
+
+<h3>-------NESTED LISTS HOMEWORK--------</h3>
+
+<center><b>#LIST NO- 1</b></center>
+
+<ol type="I">
+
+<li>Background skills
+<ol type="A">
+    <li>Unix Commnads</li>
+    <li>Vim Test Editors</li>
+</ol>
+</li>
+
+<li>HTML
+<ol type="A">
+    <li>Minimal Page</li>
+    <li>Headings</li>
+    <li>Elements</li>
+    <li>Lists
+        <ol type="i">
+            <li>Unordered</li>
+            <li>Ordered</li>
+            <li>Definition</li>
+            <li>Nested</li>
+        </ol>
+    </li>
+    <li>Links
+        <ol type="i">
+            <li>Absolute</li>
+            <li>Relative</li>
+        </ol>
+    </li>
+    <li>Images</li>
+</ol>
+</li>
+
+<li>CSS
+<ol type="A">
+    <li>Anatomy</li>
+    <li>Basic Selectors
+        <ol>
+            <li>Element</li>
+            <li>Class</li>
+            <li>ID</li>
+            <li>Group</li>
+        </ol>
+    </li>
+    <li>The DOM</li>
+    <li>Advanced Selectors</li>
+    <li>Box Model</li>
+</ol>
+</li>
+
+<li>Programming
+<ol type="A">
+    <li>Python</li>
+    <li>Javascript</li>
+</ol>
+</li>
+
+
+<li>Database</li>
+<ol type="A">
+    <li>Flat File</li>
+    <li>Relational </li>
+</ol>
+
+</ol>
+
+<center><b>#LIST NO- 2</b></center>
+<ol type="1">
+
+    <li>Chapter 1
+        <Ol type="1">
+            <li>Topic 1.1</li>
+            <li>Topic 1.2</li>
+        </Ol>
+    </li>
+
+    <li>Chapter 2
+        <ol type="1">
+            <li>Topic 2.1</li>
+            <li>Topic 2.2</li>
+            <li>Topic 2.3</li>
+        </ol>
+    </li>
+
+    <li>Chapter 3
+        <ol>
+            <li>Topic 3.1</li>
+            <li>Topic 3.2
+                <ol type="1">
+                    <li>Topic 3.2.1</li>
+                    <li>Topic 3.2.2</li>
+                </ol>
+            </li>
+            <li>Topic 3.3</li>
+        </ol>
+    </li>
+
+    <li>Chapter 4
+        <ol type="1">
+            <li>Topic 4.1</li>
+            <li>Topic 4.2</li>
+        </ol>
+    </li>
+
+    <li>Chapter 5
+        <ol>
+            <li>Topic 5.1</li>
+            <li>Topic 5.2</li>
+        </ol>
+    </li>
+</ol>
+
+<hr>
+
+<center><b>#LIST NO- 3</b></center>
+<ul type="disc">
+    <li>Item 1</li>
+    <li>Item 2
+        <ul type="circle">
+            <li>Sub Item 2.1</li>
+            <li>Sub Item 2.2</li>
+            <li>Sub Item 2.3</li>
+        </ul>
+    </li>
+    <li>Item 3</li>
+    <li>Item 4
+        <ul type="circle">
+            <li>Sub Item 4.1</li>
+            <li>Sub Item 4.2
+                 <ul>
+                    <li>Sub Item 4.2.1</li>
+                    <li>Sub Item 4.2.2</li>
+                 </ul>
+            </li>
+            <li type="circle">Sub Item 4.3</li>
+        </ul>
+    </li>
+    <li>Item 5</li>
+</ul>
+
+
+<hr>
+
+<center><b>#LIST NO- 4</b></center>
+<br>
+
+<h3>Unordered List</h3>
+<br>
+<ul type="disc">
+    <li>Step 1</li>
+    <li>Step 2
+        <ul type="circle">
+            <li>Step 2.1</li>
+            <li>Step 2.2
+                <ul >
+                    <li>Step 2.2.1</li>
+                    <li>Step 2.2.2</li>
+                    <li>Step 2.2.3</li>
+                </ul>
+            </li>
+
+            <li>Step 2.3</li>
+            <li>Step 2.4</li>
+        </ul>
+    </li>
+
+    <li>Step 3
+        <ul type="circle">
+            <li>Step 3.1</li>
+        </ul>
+    </li>
+
+    <li>Step 4</li>
+</ul>
+
+<br>
+<h3>Ordered List</h3>
+<ol>
+    <li>Step 1</li>
+    <li>Step 2
+        <ol type="a">
+        <li>Step 2.1</li>
+        <li>Step 2.2</li> 
+                <ol type="a">
+                 <li>Step 2.2.1</li>
+                 <li>Step 2.2.2</li>
+                 <li>Step 2.2.3</li>
+             </ol>
+        <li>Step 2.3</li>
+        <li>Step 2.4</li>
+    </ol>
+    </li>
+
+
+    <li>Step 3</li>
+             <ol type="a">
+             <li>Step 3.1</li>
+         </ol>
+
+
+    <li>Step 4</li>
+</ol>
+
+<hr>
+<center><b>#LIST NO- 5</b></center>
+<ol type="I"> 
+    <li>List Item 1
+        <ol type="a">
+            <li>Nested Item 1.1</li>
+            <li>Nested Item 1.2</li>           
+        </ol>
+    </li>
+
+    <li>List Item 2
+        <ol type="1">
+            <li>Nested Item 2.1</li>
+            <li>Nested Item 2.2
+                          <ul type="circle">
+                          <li>Nested Item 2.2.1</li>
+                          <li>Nested Item 2.2.2
+                                        <ul>
+                                        <li>Nested Item 2.2.2.1</li>
+                                        <li>Nested Item 2.2.2.2</li>
+                                        </ul>
+                          </li>
+                          <li>Nested Item 2.2.3</li>
+                          </ul>
+            </li>
+            <li>Nested Item 2.3</li>
+        </ol>
+    </li>
+    <li>List Item 3
+        <ul type="disc">
+            <li>Nested Item 3.1</li>
+            <li>Nested Item 3.1</li>
+            <li>Nested Item 3.1</li>
+        </ul>
+    </li>
+</ol>
+<hr>
+<center><b>#LIST NO- 6</b></center>
+<h3>List Example</h3>
+<ol type="I">
+    <li>List Item 1
+        <ol type="a">
+            <li>Nested item 1.1</li>
+            <li>Nested item 1.2</li>           
+        </ol>
+    </li>
+
+    <li>List Item 2
+        <ol type="1">
+            <li>Nested item 2.1</li>
+            <li>Nested item 2.2
+                <ul type="circle">
+                    <li>Nested item 2.2.1</li>
+                    <li>Nested item 2.2.2</li>
+                               <ul>
+                                <li>Nested item 2.2.2.1</li>
+                                <li>Nested item 2.2.2.2</li>
+                              </ul>
+                    <li>Nested item 2.2.3</li>
+                </ul>
+            </li> 
+            <li>Nested item 2.3</li>           
+        </ol>
+    </li>
+    <li>List Item 3
+        <ul type="disc">
+        <li>Nested item 3.1</li> 
+        <li>Nested item 3.1</li> 
+        <li>Nested item 3.1</li> 
+        </ul>
+    </li>
+    
+</ol>
+<br>
+<ul>COMP 249
+    <ul>Object Oriented Programming II</ul>
+</ul>
+    
+<ul>Soen287
+    <ul>Web Programming</ul>
+</ul>
+<br>
+<ul>This is a <sup>5</sup>test<sub>9</sub> for Assignment 1.</ul>
+</body>
+</html>

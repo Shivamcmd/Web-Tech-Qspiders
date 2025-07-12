@@ -1,0 +1,97 @@
+/* ! Simple selectors */
+/* CSS tools used to target individual HTML elements */
+
+/** tag name selector - koi bhi tag individually "h1" or "h2" or "div" or "p" or "b" or "i"
+/** grouping selector- ek saath saare h1,h2,h3,div, p, b , i {}
+/** universal selector- * {} -applies properties on whole body or html page
+/** id selector - #{} - unique tag pr apply hoga
+/** class selector-.{} - classified ones pr lagta hai whole property 
+
+/* ? 1. Tag Name */
+
+h1 {
+background-color: orange;
+color: black;
+}
+
+h2{
+    background-color: rgb(25, 217, 63);
+    color:black;
+
+}
+
+h3 {
+    background-color:rgb(243, 245, 246);
+    color: black;
+
+}
+
+div{
+    background-color: crimson;
+    color: white;
+}
+
+p {
+    background-color: pink;
+    color: white;
+}
+
+b {
+    background-color:yellow;
+    color: black;
+
+}
+
+ i {
+    background-color: rgb(0, 255, 110);
+    color: black;
+ }
+
+u{
+    background-color:red;
+    color: black;
+}
+
+/* ? 2. Grouping Selector */
+/* h1,h2,h3{
+    background-color: aqua;
+    color: white;
+} */
+
+
+/* ? 3. Universal Selector */
+*{
+    background-color: rgb(90, 0, 128);
+    color: rgb(250, 244, 244);
+}
+
+
+/* ? 4. id selector   (#)  - to assign unique style properties */
+
+#demo {
+    background-color: brown;
+    color: black;
+}
+
+/* ? 5. class selector  (.) - to assign style properties to classified ones */
+
+.demo{
+background-color: bisque;
+color: black;
+}
+
+.demo1 {
+background-color: red;
+color: black;
+}
+
+.demo2 {
+background-color:chartreuse;
+color:white;
+} 
+
+.demo3 {
+    background-color: skyblue;
+    color: black;
+}
+    

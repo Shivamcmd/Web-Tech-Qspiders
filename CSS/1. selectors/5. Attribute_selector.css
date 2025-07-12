@@ -1,0 +1,42 @@
+
+/**  Attribute selector 
+
+** tag
+** tag [attribute] --it target the tags with attribute
+** tag [attribute = value] -- 100% matching
+** tag [attribute^= value] -- starts with   
+** tag [attribute$= value] -- ends with  
+** tag [attribute*= value] -- contains */
+
+
+/* ! Normal tag (attribute)  selector*/
+img{
+    border: red;
+}
+
+/* ! Checking Attribute available or not  */
+img[height] {
+    border: solid rgb(0, 255, 17);
+}
+
+/* ! Starting with */
+img[alt^="power"] {
+    border: solid red;
+}
+
+/* ! Ending with */
+img[alt$="group"] {
+    border: solid yellow;
+}
+
+/* ! Exact Matching (100%)  */
+img[height="100px"] {
+    border: solid rgba(11, 10, 10, 0.832);
+}
+
+
+/* ! includes (contains or available */
+img[alt*="red ranger"] {
+    border: solid blue;
+}
+

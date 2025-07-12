@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section{
+    height: 500px;
+    width: 900px;
+    background-color: aqua;
+    border: 10px solid green ;
+
+display: flex;
+/** mandatory property , it will convert the normal container into flex container */
+
+flex-direction:row;
+/** it will specify in which direction we have to arrange our flex-items */
+/** it will decide main axis  */
+/** values : row , row-reverse , column , column-reverse*/
+
+justify-content: space-around;
+/** It will arrange the flex items in x-axis */
+/** values: start, center , end , flex-start , flex-center , flex-end */
+
+align-items: start;
+/** it will arrange flex-items in y-axis 
+/** values : start , center , end , flex-start , flex-end */
+  
+flex-wrap: wrap;
+/** it will specify whether we have to wrap flex-items to next or not . */
+/** values : nowrap , wrap , wrap-reverse */
+
+align-content: start;
+/** it will specify the alignment position of wrapped flex-items. */
+/** values : start , center , end */
+
+row-gap: 10px;
+column-gap: 30px;
+gap: 10px 30px ;
+gap: 30px;
+/** it will specify the gap between flex-items */
+
+
+
+}
+
+section div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+section div:nth-child(1) {
+    background-color: red;
+    /* flex-grow: 1; */
+    flex: 1;
+}
+
+section div:nth-child(2) {
+    background-color:pink;
+    /* flex-grow: 20; */
+    flex: 1;
+}
+
+section div:nth-child(3) {
+    background-color:blue;
+    /* flex-grow: 1;
+    flex-shrink: 50; */
+    flex: 1;
+}
+
+section div:nth-child(4) {
+    background-color:darkgreen;
+    /* flex-grow: 2; */
+    flex: 1;
+}
+
