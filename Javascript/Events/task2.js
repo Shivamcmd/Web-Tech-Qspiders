@@ -1,6 +1,4 @@
-
-    // Product list (manually pasted two sample items)
-    let product = [
+ let product = [
       {
     "id": 1,
     "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -244,64 +242,56 @@
     ];
 
 
-    //* Heading
-    var h1 = document.createElement("h1");
+
+    let cartProducts = [];
+    console.log(cartProducts);
+    //console.log(products);
+
+    let h1 = document.createElement("h1");
+    h1.innerHTML= "All products";
     document.body.appendChild(h1);
-    h1.innerText = "Product List";
-    h1.style.setProperty("text-align", "center");
 
-    //* Container
-    let container = document.createElement("div");
-    container.style.border = "2px solid red";
-    container.style.display = "flex";
-    container.style.display.justifyContent = "center";
-    container.style.flexWrap = "wrap";
-    container.style.gap = "10px";
-    container.style.margin = "24px";
-    document.body.appendChild(container);
+    let section = document.createElement("section");
+    document.body.appendChild(section);
 
-    //* Build every product card
-    product.forEach((product) => {
-      let box = document.createElement("div");
-      box.style.border = "2px solid black";
-      box.style.padding = "6px";
-      box.style.height = "415px";
-      box.style.width = "310px";
-      box.style.display = "flex";
-      box.style.flexDirection = "column";
-      box.style.alignItems = "center";
-      box.style.justifyContent = "space-between";
 
-      let image = document.createElement("img");
-      image.src = product.image;
-      image.alt = product.title;
-      image.style.border = "2px solid red";
-      image.style.height = "200px";
-      image.style.width = "200px";
-      image.style.objectFit = "contain";
+    section.setAttribute("id", "productsContainer");
 
-      let title = document.createElement("p");
-      title.innerText = product.title;
-      title.style.fontWeight = "bold";
-      title.style.fontSize = "16px";
-      title.style.textAlign = "center";
+   cartProducts.map(product => {
+    // console.log(product);
+    let article = document.createElement("article");
 
-      let price = document.createElement("p");
-      price.innerHTML = `Price: ₹${product.price}`;
+    article.innerHTML= `
+    <div class= "imageBox"> 
+         <img src = "${product.image}">
+    </div>
+    
+    <div class = "info">
+        <h3> </h3>
+        <div>
+        <span> </span>
+  <button id = "add_to_cart_${product.id}"> Add to cart </button>
 
-      let rating = document.createElement("h3");
-      rating.innerHTML = `Rating: ${product.rating.rate}`;
+  </div>
+  </div>    
+    `;
 
-      let button = document.createElement("button");
-      button.innerHTML = "Add to Cart";
-      button.style.color = "black";
-      button.style.background = "white";
-      button.style.padding = "10px";
-      button.style.borderRadius = "10px";
-      button.style.fontWeight = "bold";
-      button.style.cursor = "pointer";
+    article.setAttribute("class", "products");
 
-      box.append(image, title, price, rating, button);
-      container.appendChild(box);
+    // console.log(article);
+
+    section.append(article);
+
+    let btn = document.getElementById(`add_to_cart_${product.id}`);
+    btn.addEventListener("click", () => {
+        cartProducts.push(product.title);
+
+        console.log(cartProducts);
     });
 
+   });
+   
+   let h1_2 = document.createElement("h1");
+
+   h1_2.innerHTML = "Cart Products";
+   document.body.appendChild(h1_2);

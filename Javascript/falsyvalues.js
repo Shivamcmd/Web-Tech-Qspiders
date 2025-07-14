@@ -8,7 +8,7 @@ if ("") {
   console.log("This won't run"); // because empty string is falsy
 }
 if ("hello") {
-  console.log("This will run"); // because non-empty string is truthy
+  console.log("This will run"); //  because non-empty string is truthy
 }
 if (-0) {
   console.log("This won't run"); // because -0 is falsy

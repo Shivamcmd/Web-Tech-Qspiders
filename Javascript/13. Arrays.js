@@ -48,7 +48,7 @@ var ar = [10 , 30 , 50 ,70 ,90];
 console.log(ar); //[10 , 30 , 50 ,70 ,90]
 delete ar[1];
 delete ar[3];
-console.log(ar); // [[10 , emoty , 50 ,70 ,empty]
+console.log(ar); // [10 , emoty , 50 ,70 ,empty]
 
 //!            === Array Methods == 
 //* These are used to perform manipulations on array .
@@ -86,7 +86,6 @@ ex: console.log(ar);   //[10,20,30,40,50]
 
 //? splice():
 will modify the original array.
-will effect the original array.
 
 syntax: ar.splice(si , no of element to delete, element to add);
 ex: var ar = [10,20,30,40,50]
